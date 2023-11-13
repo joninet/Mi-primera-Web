@@ -1,8 +1,17 @@
+:root { /*variables de css*/
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+    --gris: #757575;
+
+}
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px; /* 1 rem = 10px */
+    font-family: 'Krub', sans-serif; /* agregar primero el link de la fuente de google en el html */
 }
 .titulo {
     text-align: center;
@@ -11,4 +20,31 @@ body{
 }
 .titulo span{
     font-size: 2rem;
+    color: var(--rojo)
+}
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.contenedor{
+    width: 120rem;
+    /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; */
+
+    /*esto es lo mismo que el de arriba
+    margin: 0 auto 0 auto;*/
+
+    /*esto es mas simplificado todabia */
+    margin: 0 auto;
+}
+.navegacion-principal{
+    padding: 1rem;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+
 }
